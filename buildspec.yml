@@ -16,7 +16,7 @@ phases:
       - docker push ${DOCKERHUB_USER}/my-angular-app:latest
 
       #Generate Image Definition File for ECS
-      -  printf '[{"name":"VSM-AppCon","imageUri":"%s"}]' ${DOCKERHUB_USER}/my-angular-app:latest > imagedefinitions.json 
+      -  printf '[{"name":"VSM-AppCon","imageUri":"%s"}]' ${DOCKERHUB_USER}/my-angular-app:latest > imagedefinitions.json
 
 
 artifacts:
